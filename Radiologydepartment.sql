@@ -35,6 +35,7 @@ CREATE TABLE ImagingStudies (
     StudyDate DATE NOT NULL,
     FOREIGN KEY (PatientID) REFERENCES Patients(PatientID),
     FOREIGN KEY (RadiologistID) REFERENCES Radiologists(RadiologistID)
+    FOREIGN KEY (RadiographerID) REFERENCES Radiographers(RadiographerID) -- Assuming RadiographerID is added to ImagingStudies
 );
 
 -- Create Reports Table
@@ -57,3 +58,5 @@ CREATE TABLE Appointments (
     FOREIGN KEY (PatientID) REFERENCES Patients(PatientID),
     FOREIGN KEY (RadiologistID) REFERENCES Radiologists(RadiologistID)
 );
+
+

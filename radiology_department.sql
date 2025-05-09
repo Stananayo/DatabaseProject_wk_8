@@ -8,7 +8,7 @@ CREATE TABLE Patients (
     Email VARCHAR(255) UNIQUE
 );
 
-- Create Radiographers Table
+-- Create Radiographers Table
 CREATE TABLE Radiographers (
     RadiographerID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(255) NOT NULL,
